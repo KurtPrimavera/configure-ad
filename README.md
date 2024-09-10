@@ -24,10 +24,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Set up Domain Controller 
+- Create a Network environment in Azure Virtual Network Resources 
+- Configure Network Interface Card
+- Configure DHCP, DNS, and Servers
+- Deploy clients to join the domain
+- Monitor ICMP
+- Implement cmd line tools
+- Configure the firewall
+- Implement proper login for the domain
+- Configure Active Directory
+- Created organizational units
+- Configure group policy
+- Run PowerShell ISE for administrative tasks
+- Troubleshooted user problems 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,7 +45,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Created VMs in Azure for virtual network resources. Configured NIC to static where IP addresses are assigned. The domain controller is created and set to static. Set up Client 1 to join the domain. Set Client 1 to join the private IP address of the domain controller. 
 </p>
 <br />
 
@@ -43,7 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP address from Client 1. Configured firewall in wf.msc to open the port of domain controller for Client 1. 
 </p>
 <br />
 
