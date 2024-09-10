@@ -53,7 +53,7 @@ Created VMs in Azure for virtual network resources. Configured NIC to static whe
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP address from Client 1. Configured firewall in wf.msc to open the port of domain controller for Client 1. 
+ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP address from Client 1. Configured firewall in wf.msc to open the port of domain controller for Client 1. Logged in to the domain as website.com\username. 
 </p>
 <br />
 
@@ -61,6 +61,6 @@ ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP a
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Configured Active Directory in Domain Controller. Created organizational units. Checked ipconfig /all to inspect DNS settings. Checked ping ipaddress to show working connection. Created an administrator and logged in on Client 1. Created users from the admin account. Edited group policy groups. Users were able to login to Client 1. Created a Powershell ISE script to have thousands of users. Troubleshooted password resets, disable/enable accounts, unlock accounts. Managed AD security groups and domain admins. 
 </p>
 <br />
