@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>On-premises Active Directory Deployed in the Cloud (Azure) on domain controller, setup Client-1 computer to join the domain, and manage users and groups in domain controller. </h1>
+This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines. The active directory was set up in the domain controller. Client 1 Computer must be in the same network to join the domain. An administrator manages the accounts in the domain controller. Administrator created thousands of users using a Powershell script. Other administrators and normal users could log in on the Client-1 Computer.  <br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -41,7 +41,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Created organizational units
 - Configure group policy
 - Run PowerShell ISE for administrative tasks
-- Troubleshooted user problems 
+- Troubleshooted user problems
+- Windows Settings
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -49,7 +50,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://github.com/user-attachments/assets/92f14c35-61f5-41df-a04a-cad3b2e85b0f"/>
 </p>
 <p>
-Created VMs in Azure for virtual network resources. Configured NIC to static where IP addresses are assigned. The domain controller is created and set to static. Set up Client 1 to join the domain. Set Client 1 to join the private IP address of the domain controller. 
+Created VMs in Azure for virtual network resources. Configured NIC to static where IP addresses were assigned in Azure. The domain controller was created and set to static in Azure. Used Microsoft Remoted Desktop from my host computer (macOS) to set up Client 1 to join the domain in Windows settings, but did not work. Set up Client 1 to join the private IP address of the domain controller in Azure DNS settings. 
 </p>
 <br />
 
@@ -57,7 +58,7 @@ Created VMs in Azure for virtual network resources. Configured NIC to static whe
 <img src="https://github.com/user-attachments/assets/0d43f16b-d577-440b-8ec1-1490e8af7eb5"/>
 </p>
 <p>
-ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP address from Client 1. Configured firewall in wf.msc to open the port of domain controller for Client 1. Logged in to the domain as website.com\username. 
+ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to connect to the domain controller. Ping -t pinged domain controller's private IP address from Client 1 continuously. The connection did not work, so configured the firewall in wf.msc in the domain controller to open the port for Client 1. Logged in to the domain as website.com\username from Client-1 in Windows settings. 
 </p>
 <br />
 
@@ -65,6 +66,6 @@ ICMP is a protocol that Ping uses. Ping -t ping domain controller's private IP a
 <img src="https://github.com/user-attachments/assets/3a82db2e-7232-4776-933f-45ab38246ecb"/>
 </p>
 <p>
-Configured Active Directory in Domain Controller. Created organizational units. Checked ipconfig /all to inspect DNS settings. Checked ping ipaddress to show working connection. Created an administrator and logged in on Client 1. Created users from the admin account. Edited group policy groups. Users were able to login to Client 1. Created a Powershell ISE script to have thousands of users. Troubleshooted password resets, disable/enable accounts, unlock accounts. Managed AD security groups and domain admins. 
+Configured Active Directory in the domain controller. Created organizational units. Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created users from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of users in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller. Managed AD security groups and domain admins as labuser in the domain controller. 
 </p>
 <br />
