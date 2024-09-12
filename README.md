@@ -58,7 +58,7 @@ Created VMs in Azure for virtual network resources. Configured NIC to static whe
 <img src="https://github.com/user-attachments/assets/0d43f16b-d577-440b-8ec1-1490e8af7eb5"/>
 </p>
 <p>
-ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to connect to the domain controller. Ping -t pinged domain controller's private IP address from Client 1 continuously. The connection did not work, so configured the firewall in wf.msc in the domain controller to open the port for Client 1. Logged in to the domain as website.com\username from Client-1 in Windows settings. 
+ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to connect to the domain controller. Ping -t connected domain controller's private IP address from Client 1 continuously. The connection did not work, so configured the firewall in wf.msc in the domain controller's Windows settings to open the port for Client 1. Logged in to the domain as website.com\username from Client-1 in Windows settings. Checked what computer was used by looking at the hostname, the name of the machines. 
 </p>
 <br />
 
@@ -66,6 +66,6 @@ ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to con
 <img src="https://github.com/user-attachments/assets/3a82db2e-7232-4776-933f-45ab38246ecb"/>
 </p>
 <p>
-Configured Active Directory in the domain controller. Created organizational units. Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created users from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of users in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller. Managed AD security groups and domain admins as labuser in the domain controller. 
+Configured Active Directory in the domain controller. Created organizational units such as "Employees". Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created users from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users (admin, client) in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of users in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller's AD group policy. Managed AD security groups and domain admins/users as "labuser" in the domain controller on what these groups can modify, control, read, write, enable and disable. 
 </p>
 <br />
