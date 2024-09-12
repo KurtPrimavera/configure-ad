@@ -43,6 +43,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Run PowerShell ISE for administrative tasks
 - Troubleshooted user problems
 - Windows Settings
+- Group Policy Object
+- Security Groups
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -66,6 +68,6 @@ ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to con
 <img src="https://github.com/user-attachments/assets/3a82db2e-7232-4776-933f-45ab38246ecb"/>
 </p>
 <p>
-Configured Active Directory in the domain controller. Created organizational units such as "Employees". Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created users from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users (admin, client) in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of users in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller's AD group policy. Managed AD security groups and domain admins/users as "labuser" in the domain controller on what these groups can modify, control, read, write, enable and disable. 
+Configured Active Directory in the domain controller. Created organizational units such as "Employees". Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created users from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users (admin, client) in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of clients in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller's Active Directory group policy. Managed AD security groups and domain admins/users as "labuser" in the domain controller on what these groups can modify, control, read, write, enable and disable. 
 </p>
 <br />
