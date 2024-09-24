@@ -3,9 +3,7 @@
 </p>
 
 <h1>Cloud-Hosted Active Directory: Deploying On-Premises Solutions in Azure, Joining Client-1 to the Domain, and Managing Users and Administrators </h1>
-This tutorial provides a comprehensive guide to implementing on-premises Active Directory within Azure Virtual Machines. The Active Directory was configured on a domain controller to facilitate centralized management of network resources. To successfully join the domain, the Client-1 computer must reside within the same network as the domain controller. The primary administrator, designated as labuser, was responsible for managing user accounts on the domain controller. Utilizing a PowerShell script, labuser efficiently created thousands of client accounts, streamlining the onboarding process. Additionally, other administrators and clients were able to log in on the Client-1 computer, allowing for secure access to shared resources and services within the domain.
-
-This implementation not only enhances organizational security but also simplifies user management and access control across the network. <br />
+This tutorial provides a comprehensive guide to implementing on-premises Active Directory within Azure Virtual Machines. The Active Directory was configured on a domain controller to facilitate centralized management of network resources. To successfully join the domain, the Client-1 computer must reside within the same network as the domain controller. The primary administrator, designated as labuser, was responsible for managing user accounts on the domain controller. Utilizing a PowerShell script, labuser efficiently created thousands of client accounts, streamlining the onboarding process. Additionally, other administrators and clients were able to log in on the Client-1 computer, allowing for secure access to shared resources and services within the domain. This implementation not only enhances organizational security but also simplifies user management and access control across the network. <br />
 
 
 <h2>Environments and Technologies Used</h2>
