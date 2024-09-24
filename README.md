@@ -67,7 +67,12 @@ This implementation not only enhances organizational security but also simplifie
 <img src="https://github.com/user-attachments/assets/0d43f16b-d577-440b-8ec1-1490e8af7eb5"/>
 </p>
 <p>
-ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to connect to the domain controller. Ping -t connected domain controller's private IP address from Client 1 continuously. The connection did not work, so configured the firewall in wf.msc in the domain controller's Windows settings to open the port for Client 1. Logged in to the domain as website.com\username from Client-1 in Windows settings. Checked what VM computer was used by looking at the hostname, the name of the machines. 
+1.	ICMP Monitoring with Wireshark: Monitored the ICMP protocol in Wireshark, which was utilized by the Ping command from Client 1 to connect to the domain controller.
+	2.	Continuous Ping Test: Executed the Ping command with the -t option to continuously ping the domain controller’s private IP address from Client 1. The initial connection attempts were unsuccessful.
+	3.	Firewall Configuration: Accessed the firewall settings via wf.msc on the domain controller and configured it to open the necessary ports for Client 1, enabling successful communication.
+	4.	Domain Login Verification: Successfully logged into the domain from Client 1 using the format website.com\username in Windows settings.
+	5.	Hostname Check: Verified the specific VM being used by checking the hostname, which indicated the names of the machines within the network.
+
 </p>
 <br />
 
@@ -75,6 +80,15 @@ ICMP, monitored in Wireshark, was a protocol that Ping used from client-1 to con
 <img src="https://github.com/user-attachments/assets/3a82db2e-7232-4776-933f-45ab38246ecb"/>
 </p>
 <p>
-Configured Active Directory in the domain controller. Created organizational units such as "Employees". Checked ipconfig /all to inspect DNS settings for the domain controller and Client-1 in Powershell ISE. Checked the ping ipaddress to show the working connection for the domain controller and Client-1 in Powershell ISE. Created an administrator (Jane) and logged in on Client 1. Created clients from the (labuser) admin account in the domain controller. Edited group policy groups in the active directory. Any users (admin, client) in the domain were able to log in to Client 1 computer. Created a Powershell ISE script to create thousands of clients in the domain controller. Troubleshooted password resets, disabled/enabled accounts, and unlocked accounts in the domain controller's Active Directory group policy. Managed AD security groups and domain admins/users as "labuser" in the domain controller on what these groups can modify, control, read, write, enable and disable. 
+1.	Configure Active Directory: Set up Active Directory on the domain controller and created organizational units, such as “Employees,” to streamline user management.
+	2.	Inspect DNS Settings: Utilized the ipconfig /all command in PowerShell ISE to review DNS settings for both the domain controller and Client 1, ensuring proper network configuration.
+	3.	Verify Connection with Ping: Executed the ping <IPAddress> command in PowerShell ISE to confirm the working connection between the domain controller and Client 1.
+	4.	Create Administrator Account: Established an administrator account named “Jane” and successfully logged into Client 1 using this account.
+	5.	Create Client Accounts: Utilized the “labuser” admin account on the domain controller to create multiple client accounts, facilitating access for various users.
+	6.	Edit Group Policies: Modified group policy settings within Active Directory to define permissions and restrictions for different user groups.
+	7.	User Access Verification: Ensured that all users, including administrators and clients within the domain, could log in to Client 1 without issues.
+	8.	Automate Client Creation: Developed a PowerShell ISE script to automate the creation of thousands of client accounts on the domain controller, streamlining account management.
+	9.	Troubleshoot Account Issues: Addressed user issues related to password resets, enabling/disabling accounts, and unlocking accounts within the Active Directory group policy.
+	10.	Manage AD Security Groups: Managed Active Directory security groups and domain admin/user permissions as “labuser,” defining what actions these groups can perform, including modifying, controlling, reading, writing, enabling, and disabling accounts.
 </p>
 <br />
