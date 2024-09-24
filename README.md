@@ -2,23 +2,28 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure) on the domain controller, set up Client-1 computer to join the domain and managed users and admins in the domain controller. </h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines. The active directory was set up in the domain controller. Client 1 Computer must be in the same network to join the domain. A main administrator (labuser) managed the accounts in the domain controller. Labuser created thousands of clients using a Powershell script. Other administrators and clients could log in on the Client-1 Computer.  <br />
+<h1>Cloud-Hosted Active Directory: Deploying On-Premises Solutions in Azure, Joining Client-1 to the Domain, and Managing Users and Administrators </h1>
+This tutorial provides a comprehensive guide to implementing on-premises Active Directory within Azure Virtual Machines. The Active Directory was configured on a domain controller to facilitate centralized management of network resources. To successfully join the domain, the Client-1 computer must reside within the same network as the domain controller.
+
+The primary administrator, designated as labuser, was responsible for managing user accounts on the domain controller. Utilizing a PowerShell script, labuser efficiently created thousands of client accounts, streamlining the onboarding process. Additionally, other administrators and clients were able to log in on the Client-1 computer, allowing for secure access to shared resources and services within the domain.
+
+This implementation not only enhances organizational security but also simplifies user management and access control across the network. <br />
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop Protocol
-- Active Directory Domain Services
-- PowerShell ISE
-- Domain Controller (Server Manager)
-- NIC
-- DHCP, DNS, and Servers
-- Client (Computer)
-- ICMP
-- CMD Line Tools
-- Firewall
+- Microsoft Azure (Virtual Machines/Compute): A cloud computing platform utilized to host virtual machines, providing scalable resources for deploying and managing Active Directory and other services.
+- Remote Desktop Protocol (RDP): A protocol that enables remote access to virtual machines, allowing administrators to manage and configure the domain controller and other components seamlessly.
+- Active Directory Domain Services (AD DS): A critical service used for managing domain identities and providing authentication and authorization for users and computers within the network.
+- PowerShell ISE: An integrated scripting environment that allows for efficient management and automation of tasks in Windows, including user account creation and system configuration.
+- Domain Controller (Server Manager): The server that hosts Active Directory, responsible for managing user accounts, group policies, and security settings within the domain.
+- Network Interface Card (NIC): Hardware that connects the server to the network, enabling communication between the domain controller and client machines.
+- Dynamic Host Configuration Protocol (DHCP): A network management protocol used to automatically assign IP addresses to devices within the network, ensuring proper connectivity.
+- Domain Name System (DNS): A critical service that translates domain names into IP addresses, facilitating network resource access and communication.
+- Client (Computer): The end-user device configured to join the Active Directory domain, allowing users to authenticate and access network resources.
+- Internet Control Message Protocol (ICMP): A network protocol used for diagnostic purposes, such as pinging devices to test connectivity and network health.
+- Command Line Tools (CMD): A suite of command-line utilities used for system administration, troubleshooting, and network configuration tasks.
+- Firewall: A security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules, protecting the network from unauthorized access.
 
 <h2>Operating Systems Used </h2>
 
