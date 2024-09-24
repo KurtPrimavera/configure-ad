@@ -55,7 +55,11 @@ This implementation not only enhances organizational security but also simplifie
 <img src="https://github.com/user-attachments/assets/92f14c35-61f5-41df-a04a-cad3b2e85b0f"/>
 </p>
 <p>
-Created VMs in Azure for virtual network resources. Configured NIC to static where IP addresses were assigned in Azure. The domain controller was created and set to static in Azure. Used Microsoft Remoted Desktop from my host computer (macOS) to set up Client 1 to join the domain in Windows settings, but did not work. Set up Client 1 to join the private IP address of the domain controller in Azure DNS settings. 
+1.	Create Virtual Machines in Azure: Deployed virtual machines (VMs) in Azure to establish a virtual network infrastructure for various resources.
+	2.	Configure Network Interface Card (NIC): Set the NIC to a static configuration, ensuring that specific IP addresses were assigned within Azure for reliable connectivity.
+	3.	Establish Domain Controller: Created the domain controller VM and assigned it a static IP address within Azure, enabling consistent access for managing network resources.
+	4.	Attempt to Join Domain from Client 1: Used Microsoft Remote Desktop from my host computer (macOS) to configure Client 1 to join the domain through Windows settings; however, this attempt was unsuccessful.
+	5.	Configure Client 1 for Domain Joining: Adjusted the settings on Client 1 to connect to the private IP address of the domain controller, utilizing Azure DNS settings to facilitate a successful domain join.
 </p>
 <br />
 
