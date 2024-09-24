@@ -25,29 +25,29 @@ This implementation not only enhances organizational security but also simplifie
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
-- macOS Sonoma (Host)
+- Windows Server 2022: The server operating system deployed on the domain controller, providing essential features for managing network resources, user accounts, and Active Directory services. It offers improved security, scalability, and performance, making it ideal for enterprise environments.
+- Windows 10 (21H2): Utilized on the Client-1 computer, this operating system allows users to authenticate with the Active Directory domain and access network resources. Its user-friendly interface and compatibility with a wide range of applications enhance productivity for end-users.
+- macOS Sonoma (Host): The host operating system used to manage virtual machines and access the Azure environment. Its robust performance and seamless integration with development tools support effective management of the Active Directory setup.
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Set up Domain Controller (Server Manager)
-- Create a Network environment in Azure Virtual Network Resources 
-- Configure Network Interface Card
-- Configure DHCP, DNS, and Servers
-- Deploy clients to join the domain
-- Monitor ICMP
-- Implement cmd line tools
-- Configure the firewall
-- Implement proper login for the domain
-- Configure Active Directory
-- Created organizational units
-- Configure group policy
-- Run PowerShell ISE for administrative tasks
-- Troubleshoot user problems
-- Windows Settings
-- Group Policy Object
-- Security Groups
+1.	Set Up Domain Controller (Server Manager): Installed and configured the Domain Controller using Server Manager, establishing the foundation for Active Directory services within the network.
+	2.	Create a Network Environment in Azure Virtual Network Resources: Developed a virtual network in Azure to facilitate communication between the domain controller and client machines, ensuring proper segmentation and security.
+	3.	Configure Network Interface Card (NIC): Set up the NIC on the Domain Controller to enable connectivity to the Azure virtual network and facilitate communication with clients.
+	4.	Configure DHCP, DNS, and Servers: Implemented DHCP to automate IP address assignment, configured DNS for domain name resolution, and ensured that necessary server roles were established for optimal network performance.
+	5.	Deploy Clients to Join the Domain: Provisioned client computers within the network, ensuring they were configured to join the Active Directory domain for centralized management and authentication.
+	6.	Monitor ICMP: Utilized Internet Control Message Protocol (ICMP) to test connectivity and monitor the health of network devices, ensuring seamless communication across the infrastructure.
+	7.	Implement Command Line Tools: Leveraged command line utilities for various administrative tasks, enhancing troubleshooting capabilities and system management efficiency.
+	8.	Configure the Firewall: Set up firewall rules to control inbound and outbound traffic, ensuring network security while allowing necessary communications for domain operations.
+	9.	Implement Proper Login for the Domain: Established secure login protocols for users to authenticate with the domain, enhancing security measures for accessing network resources.
+	10.	Configure Active Directory: Set up Active Directory services to manage user accounts, security policies, and access to resources within the network.
+	11.	Create Organizational Units (OUs): Organized users and resources into OUs within Active Directory for better management and application of group policies.
+	12.	Configure Group Policy: Developed and applied Group Policy Objects (GPOs) to enforce security settings and configurations across user accounts and computers within the domain.
+	13.	Run PowerShell ISE for Administrative Tasks: Utilized PowerShell Integrated Scripting Environment (ISE) to automate administrative tasks, streamline processes, and improve efficiency.
+	14.	Troubleshoot User Problems: Conducted troubleshooting of user-related issues, resolving access problems and ensuring a smooth user experience within the domain.
+	15.	Windows Settings: Configured relevant Windows settings on client machines to ensure compatibility with the domain environment and adherence to organizational policies.
+	16.	Group Policy Object (GPO): Managed and applied GPOs to enforce specific configurations and security settings across the domain, ensuring compliance and consistency.
+	17.	Security Groups: Created and managed security groups within Active Directory to control access to resources and implement permission settings effectively.
 
 <h2>Deployment and Configuration Steps</h2>
 
